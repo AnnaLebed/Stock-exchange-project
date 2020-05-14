@@ -1,0 +1,22 @@
+.text-height-20 {
+    font-size: 20px;
+}
+
+.text-height-22 {
+    font-size: 22px;
+}
+
+.line-ht {
+    line-height: 128px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.verticalcenter {
+    display: table-cell;
+    vertical-align: middle;
+}

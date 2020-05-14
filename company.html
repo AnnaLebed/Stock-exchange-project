@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/companyStyle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/nasdaq.jpg">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <img id="logo" class="logo pl-1 line-ht align-middle content verticalcenter" src="">
+            </div>
+            <div class="col-md-10">
+                <span class="col-md-2 text-primary pl-1 pr-1 line-ht text-height-20"><a id="name"></a></span>
+                <span class="col-md-2 text-primary ml-3 pl-1 line-ht text-height-20" id="sector"></span>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 text-height-20">Stock price: $<span id="price" class="mr-1"></span>
+                <span id="changes"></span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-5" id="description">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 col-md-offset-3">
+                <span id="spinner" class="spinner-border d-none" role="status"></span>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-12 mt-3">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="js/scriptCompany.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</body>
+
+</html>
