@@ -8,8 +8,7 @@ function getCompProfile() {
 
     fetch(`https://financialmodelingprep.com/api/v3/company/profile/${compSymbol}`)
         .then(response => response.json())
-        .then(function (data) {
-            //destructuring
+        .then(function (data) {         
             let {companyName, sector, price, description, image, changesPercentage, website} = data.profile;
             document.getElementById("logo").src = image;
             document.getElementById("name").textContent = companyName;

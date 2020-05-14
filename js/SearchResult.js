@@ -3,7 +3,6 @@ class SearchResult {
         this.parent = parent;
         this.button;
         this.company;
-
     }
 
 
